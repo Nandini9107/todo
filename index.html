@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FocusFlow Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>FocusFlow ⏱️</h1>
+        <p>Your minimalist, all-in-one productivity workspace.</p>
+    </header>
+
+    <main class="dashboard">
+        <section class="panel timer-panel">
+            <h2>Pomodoro</h2>
+            <div class="timer-display" id="timer">25:00</div>
+            <div class="timer-controls">
+                <button id="start-btn" class="btn primary">Start</button>
+                <button id="pause-btn" class="btn">Pause</button>
+                <button id="reset-btn" class="btn danger">Reset</button>
+            </div>
+        </section>
+
+        <section class="panel tasks-panel">
+            <h2>Today's Focus</h2>
+            <div class="task-input-container">
+                <input type="text" id="task-input" placeholder="What's next?">
+                <button id="add-task-btn" class="btn primary">+</button>
+            </div>
+            <ul id="task-list" class="task-list">
+                </ul>
+        </section>
+
+        <section class="panel notes-panel">
+            <h2>Quick Notes</h2>
+            <textarea id="scratchpad" placeholder="Type thoughts here... text autosaves instantly!"></textarea>
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
